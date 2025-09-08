@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNK Studio - Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .established {
+            background: rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .team-section {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .member-card {
+            background: white;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .raja .card-header {
+            background: linear-gradient(to right, #3498db, #2c3e50);
+        }
+        
+        .hanzla .card-header {
+            background: linear-gradient(to right, #e74c3c, #c0392b);
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .role {
+            font-style: italic;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .detail {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .detail i {
+            width: 30px;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill {
+            background: #f1f8ff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .description {
+            line-height: 1.6;
+            color: #333;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        
+        @media (max-width: 768px) {
+            .team-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .member-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">RNK STUDIO</div>
+            <div class="tagline">Innovation and Excellence in Programming</div>
+            <div class="established">Established: September 18, 2023</div>
+        </div>
+        
+        <div class="team-section">
+            <div class="member-card raja">
+                <div class="card-header">
+                    <div class="name">Raja Najaf Khan</div>
+                    <div class="role">CEO & Co-Founder</div>
+                </div>
+                <div class="card-content">
+                    <div class="detail">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Born: November 28, 2010</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-code"></i>
+                        <span>Programming Prodigy</span>
+                    </div>
+                    <div class="description">
+                        Raja Najaf Khan is a visionary programmer and tech entrepreneur. At a young age, he has demonstrated exceptional talent in software development and leadership. As the CEO of RNK Studio, he brings innovative ideas to life and inspires his team to achieve greatness.
+                    </div>
+                    <div class="skills">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">Leadership</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card hanzla">
+                <div class="card-header">
+                    <div class="name">Hanzla Shakor</div>
+                    <div class="role">Co-Founder & Tech Lead</div>
+                </div>
+                <div class="card-content">
+                    <div class="detail">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Born: May 8, 2011</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-code"></i>
+                        <span>Coding Genius</span>
+                    </div>
+                    <div class="description">
+                        Hanzla Shakor is a programming virtuoso with an incredible ability to solve complex problems. As the right-hand of Raja and co-founder of RNK Studio, Hanzla's technical expertise and creativity drive the company's success. His dedication to coding excellence is unmatched.
+                    </div>
+                    <div class="skills">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>RNK Studio - Where Innovation Meets Execution</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adding a subtle animation to the cards when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.member-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = 1;
+                    card.style.transform = 'translateY(0)';
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
